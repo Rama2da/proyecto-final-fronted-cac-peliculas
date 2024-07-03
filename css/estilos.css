@@ -1,0 +1,850 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Roboto Flex", sans-serif;
+    }
+::-webkit-scrollbar{
+    width: 7px;
+} 
+
+::-webkit-scrollbar-track {
+    background:  rgb(27, 27, 27);
+}
+
+::-webkit-scrollbar-thumb{
+    background:#3f0850;
+    border-radius: 5px;
+} 
+
+::-webkit-scrollbar-thumb:hover {
+    background:#a945c7;
+}
+
+.barra-navegacion{
+    background-color: #3f0850;
+    position:sticky;
+    height: 70px;
+}
+
+.menu-navegacion{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-left:10px;
+    margin-right: 10px;
+    padding: 1em 0em;
+}
+
+.boton-home{
+    margin-left: 30px;
+    margin-bottom: 20px;
+    width:50px;
+    height:40px;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.item-lista{
+    list-style: none;
+    display: flex;
+    align-items: center;
+}
+
+.boton-nav a{
+    text-decoration: none;
+    color: whitesmoke;
+    text-shadow: 1px 1px 2px #a945c7, 0 0 1em #a945c7, 0 0 0.2em #a945c7;    
+}
+
+.boton-nav{
+    display: inline-block;
+    padding: 10px 25px;
+    letter-spacing: 2px;
+    text-decoration: none;
+    font-size: 15px;
+    overflow: hidden;
+    transition: 0,2s;
+    background: #1a0321;
+    border-radius: 0.8em;
+    cursor: pointer;
+}
+
+.boton-nav:hover{
+    background: #a945c7;
+    box-shadow: 0 0 5px #a945c7, 0 0 10px #a945c7, 0 0 30px #a945c7;
+    transition-delay: 0.1s;
+}
+
+body{ 
+    background-color: rgb(27, 27, 27);
+    color: whitesmoke;
+}
+
+.titulo-section{
+    text-align: center;
+    padding-top: 25px;
+    border-top: #a945c7 solid 1px;
+    font-size: 35px;
+    color: whitesmoke;
+    text-shadow: 1px 1px 2px #a945c7, 0 0 1em #a945c7, 0 0 0.2em #a945c7;
+}
+
+/*CSS de la pagina registro*/
+
+.main-registro{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: calc(100vh - 60px -70px); /* Ajusta la altura según las alturas del navegador y del pie de página */
+    background-image: url(../img/background\ registro.jpg);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    width: 96%;
+    margin: auto;
+}
+.contenedor-formulario {
+    align-self: center;
+    margin: 40px;
+    text-decoration: none;
+    background-color: black;
+    border-radius: 15px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 420px;
+    height: 480px;
+    text-align: center;
+    box-shadow: 0 0 15px rgba(245, 243, 243, 0.692);
+}
+.sesion{
+    height: 400px;
+    padding-top: 15px;
+}
+.titulo-contenedor{
+    margin: 20px 0px;
+    color: whitesmoke;
+    font-size: 2em;
+    text-shadow: 1px 1px 2px #a945c7, 0 0 1em #a945c7, 0 0 0.2em #a945c7;
+}
+.items {
+    border-radius: 30px;
+    padding: 10px;
+    font-size: 0.9em;
+    font-weight: 300px;
+    width: 350px;
+    margin-bottom: 8px;
+    border: 1px solid whitesmoke;
+    background-color: black;
+    outline: none;
+    color: whitesmoke;
+}
+.checkbox {
+    color: whitesmoke;
+    margin-bottom: 5px;
+}
+.contenedor-formulario a {
+    text-decoration: none;
+    color: #a945c7;
+    margin-top: 10px;
+}
+.boton-registrarse{
+    padding: 10px 25px;
+    color: whitesmoke;
+    letter-spacing: 2px;
+    text-decoration: none;
+    font-size: 18px;
+    overflow: hidden;
+    transition: 0,2s;
+    background: #1a0321;
+    border-radius: 0.7em;
+    cursor: pointer;
+}
+.margin{
+    margin-top: 20px;
+}
+.boton-registrarse:hover{
+    background: #a945c7;
+    box-shadow:0 0 5px #a945c7, 0 0 10px #a945c7, 0 0 30px #a945c7;
+    transition-delay: 0.1s;
+}
+
+/* FIN CSS de la pagina registro*/
+
+/*CSS del contenido del inicio*/
+
+.section-inicio {
+    margin: 20px 20px;
+}
+
+h1{
+    font-size: 1.5em;
+    margin-bottom: 70px;
+}
+h2{
+    font-size: 1.2em;
+}
+.sinBorde{
+    border: none;
+}
+.buscadorInicio{
+    justify-items: end;
+    margin: 10px 0px 130px 0px;
+    
+}
+.buscadorPeliculas{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.inputBuscador{
+    margin: 10px;
+    height: 50px;
+    width: 500px;
+    border-radius: 30px;
+    border: black;
+    padding-left: 2%;
+    margin-top: 12px;
+}
+.botonBuscador{
+    background-color: #3f0850;
+    border-color: black;
+    border-radius: 40px;
+    color: antiquewhite;
+    font-size: 130%;
+    height: 50px;
+    width: 150px;
+    position: relative;
+}
+.botonBuscador:hover{
+    box-shadow:
+    5px 5px 5px black;
+}
+
+.contenido-section-inicio{
+    margin-top: 20px;
+    padding-top: 100px;
+    font-size: 40px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-position: center;
+    background-size: 98%;
+    height:480px;
+    background-image: url(../img/background2.jpg);
+    background-repeat: no-repeat;
+    border-radius: 10px;
+    text-shadow: 1px 1px 2px #a945c7, 0 0 1em #a945c7, 0 0 0.2em #a945c7;
+}
+
+/*FIN del siction Inicio*/
+
+/*Inicio pagina trailer*/
+
+.menu-navegacion-trailer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.boton-home-trailer {
+    width: 55px;
+    height: 50px;
+}
+
+.section-trailer {
+    text-align: center;
+    padding: 10px;
+}
+
+.body-trailer {
+    position: relative;
+    min-height: 100%vh;
+    background-image: url(../img/peli_1.jpg);
+    background-position: center center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.body-trailer::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); 
+    z-index: -1;
+}
+
+.section-trailer,
+.info-trailer,
+.titulo-trailer-2,
+.contenedor-info-trailer,
+.imagen-trailer,
+.img1,
+.contenedor-video {
+    position: relative;
+    z-index: 2; 
+}
+
+
+.info-trailer{
+    margin-top: 40px;
+    display: flex;
+    justify-content: left;
+    flex-direction: column;
+    color: white;
+    gap: 15px;
+}
+
+
+.titulo-trailer-2{
+    font-size: 35px;
+}
+
+.contenedor-info-trailer{
+    display: flex;
+    justify-content: space-between;
+    gap: 60px;
+    margin:70px;
+}
+
+.imagen-trailer{
+    border-radius: 15px;
+    border:1.5px solid black;
+    margin-top: 30px;
+}
+
+.img1{
+    width: 300px;
+    height: 380px;
+    border: solid black 1px;
+    
+}
+
+.contenedor-video{
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding: 5px;
+    margin-bottom: 30px;
+}
+.contenedor-video h2{
+    font-size: 2em;
+    margin: 10px;
+}
+iframe {
+    height: 450px;
+    width: 690px;
+}
+/*FIN pagina Trailer*/
+
+/*Inicio section tendencias*/
+.section-tendencias{
+    color: whitesmoke;
+    justify-content: start;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    text-align: center;
+    flex-direction: initial;
+    margin: 15px 30px;
+    padding: 10px 20px;;
+    background-size: 98%;
+}
+.section-tendencias .card-peliculas {
+    font-size: 15px;
+}
+.card-peliculas{
+    background-color: rgba(0, 0, 0, 0.872);
+    border-radius: 20px;
+    width: 230px;
+    height: 390px;
+    padding: 5px;
+    margin: 5px;
+    transition: 0.1s;
+    text-decoration: none;
+    overflow: hidden;
+}
+.card-peliculas:hover{
+    transform: scale(1.05);
+    transition: 0.3s;
+    background:#3f0850;
+    box-shadow: 0 0 0 0.3px whitesmoke;
+    overflow: hidden;
+}
+.titulo-pelicula{
+    padding-top: 10px;
+    color: whitesmoke;
+    font-size: 1.5em;
+}
+img {
+    border-radius: 15px;
+}
+
+/*Fin setion Tendencias*/
+
+/*Inicio section Clasicas*/
+.peliculas-clasicas{
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    flex-direction: row;
+    margin: 30px 30px;
+}
+.swiffy-slider{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.slider-container {
+    display: flex;
+    flex-direction: row;
+    border-radius: 15px;
+    width: 700px;
+    height: 360px;
+    overflow: hidden;
+}
+.slider-pelicula{
+    display: flex;
+    justify-content: center;
+    width: 700px;
+    gap: 100px;
+    align-items: center;
+    text-align: justify;
+}
+.descripcion-peli-clasica {
+    font-size: 1.2em;
+}
+/*FIN Section clasicas*/
+
+/*css del footer*/
+
+.footer{
+    height: 80px;
+    font-size: 1em;
+    color: whitesmoke;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 1em 0em;
+    background: #3f0850;
+    text-decoration: none;
+    position: static;
+    left: 0;
+    width: 100%;
+    z-index: 1;
+    bottom: 0;
+    width: 100%;
+}
+.footer ul{
+    list-style: none;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+.botones-footer {
+    gap: 25px;
+}
+
+
+/*-------------------breackpoint---------------------*/
+
+
+@media (max-width:800px){
+
+    .barra-navegacion{
+        height: 60px;
+        }
+
+    .menu-navegacion{
+        justify-content:center;
+        padding: 0.5em 0em;
+    }
+
+    .boton-nav{
+        padding: 8px 20px;
+        letter-spacing: 1px;
+        font-size: 1em;
+    }
+
+    h1{
+        font-size: 1em;
+    }
+
+    h2{
+        font-size: 0.8em;
+    }
+
+    .titulo-section{
+        padding-top: 20px;
+        font-size: 40px;
+    }
+
+    .contenido-section-inicio{
+        padding-top: 50px;
+        font-size: 55px;
+        background-size: 95%;
+        height:320px;
+    }
+
+    .sinBorde{
+        position: relative;
+        margin-top:80px ;
+    }
+
+    .buscadorPeliculas{
+        margin-top: 25px;
+    }
+    
+    .section-tendencias{
+        justify-content: space-between;
+        flex-direction: row;
+    }
+
+    .card-peliculas{
+        width: 230px;
+        height: 330px;
+        padding: 5px;
+        margin: 0px;
+    }
+
+    .card-peliculas img {
+        width: 210px;
+        height: 270px;
+    }
+
+    .descripcion-peli-clasica {
+        display: none;
+    }
+    .peliculas-clasicas{
+        margin: 50px;
+    }
+    
+    .swiffy-slider{
+        margin: auto;
+    }
+    
+    .slider-container {
+        border-radius: 5px;
+        width: 310px;
+        height: 350px;
+    }
+    
+    .slider-pelicula{
+        width: 300px;
+        gap: 100px;
+    }
+    
+    .slider-pelicula img {
+        width: 250px;
+        height: 340px;
+    }
+    
+    .footer{
+        font-size: 1.2em;
+    }
+    
+    .botones-footer {
+        gap: 10px;
+    }
+
+    .contenedor-info-trailer{
+        display: flex;
+        justify-content: left;
+        flex-direction: column;
+    }
+    .img1{
+        align-self: center;
+    }
+    
+
+}
+/*------------------------------------------------------*/
+@media (max-width:623px){
+
+    h1{
+        font-size: 0.7em;
+    }
+
+    h2{
+        font-size: 0.5em;
+    }
+
+}
+/*------------------------------------------------------*/
+@media (max-width:590px){
+.titulo-trailer-2{
+    font-size: 28px;
+}   
+.p-trailer{
+    font-size: 22px;
+}
+.img1{
+    width: 250px;
+    height: 330px;
+}
+iframe{
+    height: 450px;
+    width: 90%;
+    
+}
+
+}
+/*----------------------------------------------------------------------*/
+@media (max-width:564px){
+
+    .boton-home{
+        position: relative;
+        margin-left: 4px;
+        margin-top: 2px;
+        margin-bottom: 50px;
+        width:40px;
+        height:30px;
+    }
+    
+    .boton-nav{
+        padding: 2px 2px;
+        margin-right: 0.5px;
+        font-size: 1.05em;
+        border-radius: 0.5em;
+        margin-bottom: 15px;
+    }
+    
+    .inputBuscador{
+        width: 350px;
+    }
+
+    .botonBuscador{
+        height: 50px;
+        width: 120px;
+    }
+
+    h1{
+        font-size: 0.8em;
+    }
+
+    h2{
+        font-size: 0.7em;
+    }
+
+    .contenido-section-inicio{
+        padding-top: 20px;
+        font-size: 35px;
+        height:200px;
+        background-image:none;
+    }
+
+    .sinBorde{
+        border-top: 1px #a945c7 solid;
+        padding-top: 90px;
+        font-size: 30px;
+    }
+
+    .buscadorPeliculas{
+        margin-top: 25px;
+    }
+    
+    .section-tendencias{
+        justify-content: space-between;
+        flex-direction: row;
+    }
+
+    .section-tendencias{
+        justify-content: space-between;
+        flex-direction: row;
+        margin: 30px 30px;
+        padding: 10px 20px;
+    }
+
+    .card-peliculas{
+        width: 160px;
+        height: 250px;
+        padding: 2px;
+        margin: 2px;
+    }
+
+    .titulo-pelicula{
+        padding-top: 10px;
+    }
+
+    .titulo-pelicula{
+        font-size: 0.8em;
+        padding-top: 7px;
+    }
+    
+    .card-peliculas img {
+        width: 150px;
+        height: 220px;
+    }
+
+    .descripcion-peli-clasica {
+        display: none;
+    }
+    .peliculas-clasicas{
+        margin: 30px;
+    }
+    
+    .swiffy-slider{
+        margin: auto;
+    }
+    
+    .slider-container {
+        width: 250px;
+        height: 275px;
+    }
+    
+    .slider-pelicula{
+        width: 220px;
+        gap: 50px;
+    }
+
+    .slider-pelicula img{
+        width: 190px;
+        height: 270px;
+    }
+
+    .descripcion-peli-clasica {
+        font-size: 1.2em;
+    }
+    
+    .footer{
+        font-size: 1em;
+    }
+    
+    .footer img{
+        width: 35px;
+        height: 35px;
+    }
+    
+    .botones-footer {
+        gap: 15px;
+    }
+}
+/*------------------------------------------------------*/
+@media (max-width:427px){
+
+    .boton-nav{
+        padding: 2px;
+        margin-right: 0.1px;
+        font-size: 13px;
+        border-radius: 0.2em;
+        margin-bottom: 10px;
+    }
+
+    .contenido-section-inicio{
+        font-size: 2em;
+        height:200px;
+        background-image: none;
+    }
+
+    .main-registro{
+        background-image: none;
+        width: 90%;
+    }
+    
+    .sesion{
+        height: 400px;
+        padding-top: 15px;
+    }
+    
+    .titulo-contenedor{
+        margin: 20px 0px;
+        font-size: 2.3em;
+    }
+    
+    .items {
+        border-radius: 20px;
+        padding: 10px;
+        font-size: 0.8em;
+        font-weight: 270px;
+        width: 250px;
+    }
+
+    .inputBuscador{
+        width: 250px;
+        height: 40px ;
+    }
+
+    .botonBuscador{
+        width: 80px;
+        height: 40px;
+    }
+
+    .section-tendencias{
+        flex-direction: column;
+    }
+    .titulo-section{
+        padding-top: 20px;
+        font-size: 30px;
+    }
+
+    h2{
+        font-size: 0.7em;
+    }
+
+    .card-peliculas{
+        width: 180px;
+        height: 270px;
+    }
+
+    .titulo-pelicula{
+        font-size: medium;
+        padding-top: 10px;
+        color: whitesmoke;
+    }
+    
+    .card-peliculas img {
+        width: 160px;
+        height: 230px;
+    }
+
+    .descripcion-peli-clasica {
+        display: none;
+    }
+    
+    
+    .slider-container {
+        width: 210px;
+        height: 230px;
+    }
+    
+    .slider-pelicula{
+        width: 220px;
+    }
+
+    .slider-pelicula img{
+        width: 160px;
+        height: 220px;
+    }
+    
+    .footer{
+        font-size: 0.8em;
+    }
+    
+    .botones-footer {
+        gap: 5px;
+    }
+
+    /*-----------------------------------*/
+    @media (max-width:360px){
+    
+.boton-nav{
+    padding: 2px;
+    font-size: 10px;
+    margin-bottom: 10px;
+    }
+    
+}
+.buscadorInicio{
+    margin: 10px 0px 50px 0px;
+}
+
+}
